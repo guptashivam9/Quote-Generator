@@ -48,4 +48,20 @@ const categorySelect = document.getElementById('category-select');
     displayQuote();
   });
 
+  const modeToggleIcon = document.getElementById('mode-toggle-icon');
+  modeToggleIcon.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+  
+  document.getElementById('increase-font').addEventListener('click', () => {
+    fontSize += 2;
+    quoteText.style.fontSize = fontSize + 'px';
+  });
+  
+  document.getElementById('decrease-font').addEventListener('click', () => {
+    fontSize = Math.max(10, fontSize - 2);
+    quoteText.style.fontSize = fontSize + 'px';
+  });
+  
+  displayQuote();
   
