@@ -7,6 +7,8 @@ Experience the application here: https://quote-generator-project-demo.netlify.ap
 
 
 Technologies Used
+
+
 --HTML5: Structuring the content of the web application.
 
 --CSS3: Styling the application for an appealing user interface.
