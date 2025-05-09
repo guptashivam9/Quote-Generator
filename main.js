@@ -1,13 +1,29 @@
 const quotes = [
     { text: "The good thing about science is that it's true whether or not you believe in it.", category: "science" },
     { text: "Science is simply the word we use to describe a method of organizing our curiosity.", category: "science" },
+    { text: "Nothing in life is to be feared, it is only to be understood.", category: "science" },
+    { text: "The important thing is not to stop questioning. Curiosity has its own reason for existing.", category: "science" },
+    { text: "Science is a way of thinking much more than it is a body of knowledge.", category: "science" },
+    { text: "Research is what I'm doing when I don't know what I'm doing.", category: "science" },
+    { text: "Science is the great antidote to the poison of enthusiasm and superstition.", category: "science" },
+    { text: "The universe is under no obligation to make sense to you.", category: "science" },
+    { text: "Science is the poetry of reality.", category: "science" },
+
     { text: "Programs must be written for people to read, and only incidentally for machines to execute.", category: "computer" },
-    { text: "Computer science is no more about computers than astronomy is about telescopes.", category: "computer" }
+    { text: "Computer science is no more about computers than astronomy is about telescopes.", category: "computer" },
+    { text: "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.", category: "computer" },
+    { text: "The purpose of computing is insight, not numbers.", category: "computer" },
+    { text: "The computer was born to solve problems that did not exist before.", category: "computer" },
+    { text: "If debugging is the process of removing software bugs, then programming must be the process of putting them in.", category: "computer" },
+    { text: "Good code is its own best documentation.", category: "computer" },
+    { text: "An algorithm must be seen to be believed.", category: "computer" },
+    { text: "Computers are good at following instructions, but not at reading your mind.", category: "computer" }
+
   ];
   
   let currentIndex = 0;
   let currentCategory = 'all';
-  let fontSize = 18;
+  let fontSize = 14;
   
 const quoteText = document.getElementById('text');
 
