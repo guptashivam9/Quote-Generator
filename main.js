@@ -41,5 +41,11 @@ document.getElementById('next-quote').addEventListener('click', () => {
     displayQuote();
   });
 
+const categorySelect = document.getElementById('category-select');
+  categorySelect.addEventListener('change', (e) => {
+    currentCategory = e.target.value;
+    currentIndex = 0;
+    displayQuote();
+  });
 
   
