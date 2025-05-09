@@ -25,6 +25,21 @@ const quoteText = document.getElementById('text');
     quoteText.textContent = filteredQuotes[currentIndex].text;
   };
 
+document.getElementById('next-quote').addEventListener('click', () => {
+    currentIndex++;
+    displayQuote();
+  });
+
+  document.getElementById('prev-quote').addEventListener('click', () => {
+    currentIndex--;
+    displayQuote();
+  });
+  
+  document.getElementById('random-quote').addEventListener('click', () => {
+    const filteredQuotes = getFilteredQuotes();
+    currentIndex = Math.floor(Math.random() * filteredQuotes.length);
+    displayQuote();
+  });
 
 
   
