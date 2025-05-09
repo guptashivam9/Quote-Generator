@@ -9,6 +9,21 @@ const quotes = [
   let currentCategory = 'all';
   let fontSize = 18;
   
+const quoteText = document.getElementById('text');
+
+  const getFilteredQuotes = () => {
+    return currentCategory === 'all' ? quotes : quotes.filter(q => q.category === currentCategory);
+  };
+
+  const displayQuote = () => {
+    const filteredQuotes = getFilteredQuotes();
+    if (filteredQuotes.length === 0) {
+      quoteText.textContent = ' Opps! no quotes available for this category.';
+      return;
+    }
+    currentIndex = (currentIndex + filteredQuotes.length) % filteredQuotes.length;
+    quoteText.textContent = filteredQuotes[currentIndex].text;
+  };
 
 
 
